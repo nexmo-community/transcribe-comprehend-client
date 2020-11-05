@@ -69,7 +69,7 @@ That callee number must be in E.164 format, for example:</br>
 44xxx..xxxxx (number starting with 44 for a UK phone number)</br>
 33xxxxxxxxx (11-digit number starting with 33 for a France phone number)
 
-## Running Transcibe & Comprehend client application
+## Running Transcribe & Comprehend client application
 
 You may select one of the following 2 types of deployments.
 
