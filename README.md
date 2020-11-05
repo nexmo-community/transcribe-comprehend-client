@@ -73,7 +73,7 @@ That callee number must be in E.164 format, for example:</br>
 
 ## Running Transcibe & Comprehend client application
 
-You may select one of the following 3 types of deployments.
+You may select one of the following 2 types of deployments.
 
 ### Local deployment
 
@@ -122,11 +122,3 @@ git push heroku master
 ```
 
 On your Heroku dashboard where your application page is shown, click on `Open App` button, that hostname is the one to be used under your corresponding [Vonage Voice API application Capabilities](https://dashboard.nexmo.com/applications) (click on your application, then [Edit]).
-
-### 1-click Heroku deployment
-
-Click the 'Deploy to Heroku' button at the top of this page, and follow the instructions to enter your Heroku application name and the 5 parameter values.
-
-On your Heroku dashboard where your application page is shown, click on `Open App` button, that hostname is the one to be used under your corresponding [Vonage Voice API application Capabilities](https://dashboard.nexmo.com/applications) (click on your application, then [Edit]).
-
-
