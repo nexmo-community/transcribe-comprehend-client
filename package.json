@@ -1,0 +1,22 @@
+{
+  "name": "transcribe-comprehend-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transcribe-comprehend-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nexmo": "^2.8.0",
+    "request": "^2.88.2"
+  }
+}
