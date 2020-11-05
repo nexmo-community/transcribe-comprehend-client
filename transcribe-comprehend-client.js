@@ -104,7 +104,7 @@ app.post('/event', (req, res) => {
               // 'client_id': uuid + '_' + req.query.from,
               "entity": "customer", // optional parameter, default is "" -- e.g. "customer", "agent", "supervisor", "buyer", "technician", ...
               "sensitivity": 3,  // optional parameter, voice activity detection, possible values 0 (most sensitive) to 3 (least sensitive - default value)
-              "do_sentiment": false // optional parameter, if set to false, only transcription is requested
+              "do_sentiment": true // optional parameter, if set to false, only transcription is requested
               }      
           }
         ],
@@ -202,7 +202,7 @@ app.post('/callee_event', (req, res) => {
             // "client_id": uuid + "_" + req.query.from,
             "entity": "agent", // optional parameter, default is "" -- e.g. "customer", "agent", "supervisor", "buyer", "technician", ...
             "sensitivity": 3,  // optional parameter, voice activity detection, possible values 0 (most sensitive) to 3 (least sensitive - default value)
-            "do_sentiment": false // optional parameter, if set to false, only transcription is requested
+            "do_sentiment": true // optional parameter, if set to false, only transcription is requested
             },         
           }],
         from: {
