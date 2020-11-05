@@ -101,13 +101,32 @@ node transcribe-comprehend-client
 
 ### Command Line Heroku deployment
 
-Deploy this connector application to Heroku from the command line using the Heroku CLI:
+Copy the `.env.example` file over to a new file called `.env`:
+```bash
+cp .env.example .env
+```
+
+Edit `.env` file, and set the 5 parameter values:</br>
+API_KEY=</br>
+API_SECRET=</br>
+APP_ID=</br>
+TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER=</br>
+CALLEE_NUMBER=</br>
+
+If you do not yet have a local git repository, create one:</br>
+```bash
+git init
+git add .
+git commit -am "initial"
+```
+
+Deploy this client application to Heroku from the command line using the Heroku CLI:
 
 ```bash
 heroku create myappname
 ```
 
-On your Heroku dashboard where your connector application page is shown, click on `Settings` button,
+On your Heroku dashboard where your client application page is shown, click on `Settings` button,
 add the following `Config Vars` and set them with their respective values:</br>
 API_KEY</br>
 API_SECRET</br>
@@ -119,4 +138,5 @@ CALLEE_NUMBER</br>
 git push heroku master
 ```
 
-On your Heroku dashboard where your application page is shown, click on `Open App` button, that hostname is the one to be used under your corresponding [Vonage Voice API application Capabilities](https://dashboard.nexmo.com/applications) (click on your application, then [Edit]).
+On your Heroku dashboard where your application page is shown, click on `Open App` button, that hostname is the one to be used under your corresponding [Vonage Voice API application Capabilities](https://dashboard.nexmo.com/applications) (click on your application, then [Edit]).</br>
+See more details in above section **Set up your Vonage Voice API client application credentials and phone number**.
