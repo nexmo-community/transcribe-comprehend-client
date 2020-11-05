@@ -1,7 +1,5 @@
 # Amazon Transcribe & Comprehend sample client application
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nexmo-se/transcribe-comprehend-client)
-
 Use this sample application to connect to a Transcribe & Comprehend connector for real time transcription and sentiment analysis of voice calls.
 
 ## About this sample application
