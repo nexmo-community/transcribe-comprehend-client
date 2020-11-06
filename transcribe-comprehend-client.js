@@ -75,7 +75,7 @@ app.get('/answer', (req, res) => {
       event_method: "POST"
     }, (err, res) => {
       if (err) {console.error("Outgoing call failed:", err)}
-      else {console.log("Outgooing call status:", res)}
+      else {console.log("Outgoing call status:", res)}
       }
     );
 
