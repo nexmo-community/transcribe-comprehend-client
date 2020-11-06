@@ -21,7 +21,7 @@ Once this application will be running, you test as follows:</br>
 
 First set up a Transcribe & Comprehend connector server from https://github.com/nexmo-se/vg-transcribe-comprehend.
 
-Default local (not public!) connector server application `port` is: 8000.
+Default local (not public!) sample application `port` is: 8000.
 
 If you plan to test using `Local deployment` with ngrok for both the connector application and this sample application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
 
@@ -31,7 +31,7 @@ e.g. `xxxxxxxx.ngrok.io`, `xxxxxxxx.herokuapp.com`  (as **`TRANSCRIBE_COMPREHEND
 
 ## Client application public hostname and port
 
-Default local (not public!) sample application `port` is: 5000.
+Default local (not public!) sample application `port` is: 8000.
 
 If you plan to test using `Local deployment` with ngrok for both this sample application and the connector application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
 
