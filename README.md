@@ -19,7 +19,7 @@ Once this application will be running, you test as follows:</br>
 
 ## Set up the connector server - Public hostname and port
 
-First set up a Transcribe & Comprehend connector server from https://github.com/nexmo-se/vg-transcribe-comprehend.
+First set up a Transcribe & Comprehend connector server from https://github.com/nexmo-se/transcribe-comprehend-multi-sub.
 
 Default local (not public!) connector server `port` is: 5000.
 

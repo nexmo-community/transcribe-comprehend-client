@@ -117,8 +117,8 @@ app.post('/event', (req, res) => {
           event_url: ["https://" + hostName + "/ws_event1?original_uuid=" + uuid],
           event_method: "POST"
         }, (err, res) => {
-          if (err) {console.error("Outgoing call failed:", err)}
-          else { console.log("Outgoing call status:", res)}
+          if (err) {console.error("Websoket 1 failed:", err)}
+          else { console.log("Websoket 1 status:", res)}
       }
     );
   }
@@ -214,8 +214,8 @@ app.post('/callee_event', (req, res) => {
         event_url: ["https://" + hostName + "/ws_event2?original_uuid=" + originalUuid + '&callee_uuid=' + uuid],
         event_method: "POST"
         }, (err, res) => {
-          if (err) {console.error("Outgoing call failed:", err); }
-          else { console.log("Outgoing call status:", res); }
+          if (err) {console.error("Websocket 2 failed:", err); }
+          else { console.log("Websocket 2 status:", res); }
       }
     );
   }
@@ -254,7 +254,27 @@ app.post('/stt_sentiment', (req, res) => {
 
 });
 
+//-----------
+
+app.post('/transcript', (req, res) => {
+
+  console.log(">>> Transcript:", req.body.transcript);
+ 
+  res.status(200).send('Ok');
+
+});
+
 //------------
+
+app.post('/sentiment_score', (req, res) => {
+
+  console.log(">>> Sentiment score:", req.body);
+ 
+  res.status(200).send('Ok');
+
+});
+
+//-------
 
 app.use ('/', express.static(__dirname));
 
