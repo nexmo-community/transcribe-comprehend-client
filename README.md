@@ -27,7 +27,7 @@ If you plan to test using `Local deployment` with ngrok for both the connector a
 
 For the next steps, you will need:
 - The Transcribe & Comprehend connector server's public hostname and if necessary public port,</br>
-e.g. `xxxxxxxx.ngrok.io`, `xxxxxxxx.herokuapp.com`  (as **`TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER`**, no `port` is necessary with ngrok or Heroku as public hostname)
+e.g. `xxxxxxxx.ngrok.io`, `xxxxxxxx.herokuapp.com`, `myserver.mycompany.com:30000`  (as **`TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER`**, no `port` is necessary with ngrok or heroku as public hostname)
 
 ## Client application public hostname and port
 
@@ -37,7 +37,7 @@ If you plan to test using `Local deployment` with ngrok for both this sample app
 
 For the next steps, you will need:
 - The server's public hostname and if necessary public port on where this application is running,</br>
-e.g. `yyyyyyyy.ngrok.io`, `yyyyyyyy.herokuapp.com` (as `host`), no `port` is necessary with ngrok or Heroku as public hostname.
+e.g. `yyyyyyyy.ngrok.io`, `yyyyyyyy.herokuapp.com`, `myprogramserver.mycompany.com:32000` (as `host`), no `port` is necessary with ngrok or heroku as public hostname.
 
 ## Set up your Vonage Voice API client application credentials and phone number
 
