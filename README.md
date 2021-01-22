@@ -15,7 +15,7 @@ Once this application will be running, you test as follows:</br>
 - Both parties can speak to each other,</br>
 - Each PSTN (Public Switched Telephone Network) call leg will have a corresponding Websocket call leg listening only to that party for audio streaming to the connector, all four legs are connected to the same conference,</br>
 - Transcript and sentiment scores of each party will be received by this application in real time,</br>
-- When the initial caller (first phone) hangs up, both PSTN and both Websocket legs will be automatically terminated.
+- When the initial caller (first phone) hangs up, second PSTN leg and both Websocket legs will be automatically terminated.
 
 ## Set up the connector server - Public hostname and port
 

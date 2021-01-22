@@ -254,26 +254,6 @@ app.post('/stt_sentiment', (req, res) => {
 
 });
 
-//-----------
-
-app.post('/transcript', (req, res) => {
-
-  console.log(">>> Transcript:", req.body.transcript);
- 
-  res.status(200).send('Ok');
-
-});
-
-//------------
-
-app.post('/sentiment_score', (req, res) => {
-
-  console.log(">>> Sentiment score:", req.body);
- 
-  res.status(200).send('Ok');
-
-});
-
 //-------
 
 app.use ('/', express.static(__dirname));
