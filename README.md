@@ -94,24 +94,18 @@ Install dependencies once:
 npm install
 ```
 
-Launch the applicatiom:
+Launch the application:
 ```bash
 node transcribe-comprehend-client
 ```
 
 ### Command Line Heroku deployment
 
-Copy the `.env.example` file over to a new file called `.env`:
-```bash
-cp .env.example .env
-```
+Install [git](https://git-scm.com/downloads).
 
-Edit `.env` file, and set the 5 parameter values:</br>
-API_KEY=</br>
-API_SECRET=</br>
-APP_ID=</br>
-TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER=</br>
-CALLEE_NUMBER=</br>
+Install [Heroku command line](https://devcenter.heroku.com/categories/command-line) and login to your Heroku account.
+
+Download this sample application code to a local folder, then go to that folder.
 
 If you do not yet have a local git repository, create one:</br>
 ```bash
