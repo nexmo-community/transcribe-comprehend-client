@@ -15,7 +15,7 @@ let Nexmo = require('nexmo');
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.API_SECRET;
 const appId = process.env.APP_ID;
-const transcribeComprehendServer = process.env.TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER;
+const transcribeComprehendServer = process.env.TRANSCRIBE_COMPREHEND_REFERENCE_CONNECTION;
 const calleeNumber = process.env.CALLEE_NUMBER;
 
 const port = process.env.PORT || 8000;

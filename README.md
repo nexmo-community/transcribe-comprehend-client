@@ -1,39 +1,39 @@
 # Amazon Transcribe & Comprehend sample client application
 
-Use this sample application to connect to a Transcribe & Comprehend connector for real time transcription and sentiment analysis of voice calls.
+Use this sample application to connect to a Transcribe & Comprehend reference connection for real time transcription and sentiment analysis of voice calls.
 
 ## About this sample application
 
-This sample client application makes use of Vonage Voice API to establish voice calls and set up websockets connections to stream audio to the Transcribe & Comprehend connector server then get back in real time transcipts and sentiment scores.
+This sample client application makes use of Vonage Voice API to establish voice calls and set up websockets connections to stream audio to the Transcribe & Comprehend reference connection server then get back in real time transcipts and sentiment scores.
 
-The connector posts back in real time transcripts and optionally sentiment scores, via a webhook call back to this Vonage Voice API sample client application.
+The reference connection posts back in real time transcripts and optionally sentiment scores, via a webhook call back to this Vonage Voice API sample client application.
 
 Once this application will be running, you test as follows:</br>
 - Have 2 phones available (ideally first one with you, second one remote with someone else, or conversely),</br>
 - From the first phone, call in to the **`phone number linked`** to your application (as explained below), that party will act as the "customer",</br>
 - The second phone will automatically get called, that party will act as the "agent",</br>
 - Both parties can speak to each other,</br>
-- Each PSTN (Public Switched Telephone Network) call leg will have a corresponding Websocket call leg listening only to that party for audio streaming to the connector, all four legs are connected to the same conference,</br>
+- Each PSTN (Public Switched Telephone Network) call leg will have a corresponding Websocket call leg listening only to that party for audio streaming to the reference connection, all four legs are connected to the same conference,</br>
 - Transcript and sentiment scores of each party will be received by this application in real time,</br>
 - When the initial caller (first phone) hangs up, second PSTN leg and both Websocket legs will be automatically terminated.
 
-## Set up the connector server - Public hostname and port
+## Set up the reference connection server - Public hostname and port
 
-First set up a Transcribe & Comprehend connector server from https://github.com/nexmo-se/transcribe-comprehend-multi-sub.
+First set up a Transcribe & Comprehend reference connection server from https://github.com/nexmo-se/transcribe-comprehend-multi-sub.
 
-Default local (not public!) connector server `port` is: 5000.
+Default local (not public!) reference connection server `port` is: 5000.
 
-If you plan to test using `Local deployment` with ngrok for both the connector application and this sample application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
+If you plan to test using `Local deployment` with ngrok for both the reference connection application and this sample application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
 
 For the next steps, you will need:
-- The Transcribe & Comprehend connector server's public hostname and if necessary public port,</br>
-e.g. `xxxxxxxx.ngrok.io`, `xxxxxxxx.herokuapp.com`, `myserver.mycompany.com:30000`  (as **`TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER`**, no `port` is necessary with ngrok or heroku as public hostname)
+- The Transcribe & Comprehend reference connection server's public hostname and if necessary public port,</br>
+e.g. `xxxxxxxx.ngrok.io`, `xxxxxxxx.herokuapp.com`, `myserver.mycompany.com:30000`  (as **`TRANSCRIBE_COMPREHEND_REFERENCE_CONNECTION`**, no `port` is necessary with ngrok or heroku as public hostname)
 
 ## Client application public hostname and port
 
 Default local (not public!) sample application `port` is: 8000.
 
-If you plan to test using `Local deployment` with ngrok for both this sample application and the connector application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
+If you plan to test using `Local deployment` with ngrok for both this sample application and the reference connection application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
 
 For the next steps, you will need:
 - The server's public hostname and if necessary public port on where this application is running,</br>
@@ -61,7 +61,7 @@ For the next steps, you will need:</br>
 - The **`phone number linked`** to your application (your first phone will **call that number**),</br>
 - Your [Vonage API key](https://dashboard.nexmo.com/settings) (as **`API_KEY`**)</br>
 - Your [Vonage API secret](https://dashboard.nexmo.com/settings), not signature secret, (as **`API_SECRET`**)</br>
-- The Transcribe & Comprehend connector server public hostname and port (as **`TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER`**)</br>
+- The Transcribe & Comprehend reference connection server public hostname and port (as **`TRANSCRIBE_COMPREHEND_REFERENCE_CONNECTION`**)</br>
 - If you did not yet add funds since you created your account, the [Phone number](https://dashboard.nexmo.com/edit-profile) under your profile (do not confuse with the **`phone number linked`** to your application) must be used as **`CALLEE_NUMBER`** (i.e. the 2nd phone that gets called),</br>
 otherwise you may enter any desired callee phone number as **`CALLEE_NUMBER`**.</br>
 That callee number must be in E.164 format, for example:</br>
@@ -86,7 +86,7 @@ Edit `.env` file, and set the 5 parameter values:</br>
 API_KEY=</br>
 API_SECRET=</br>
 APP_ID=</br>
-TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER=</br>
+TRANSCRIBE_COMPREHEND_REFERENCE_CONNECTION=</br>
 CALLEE_NUMBER=</br>
 
 Install dependencies once:
@@ -125,7 +125,7 @@ add the following `Config Vars` and set them with their respective values:</br>
 API_KEY</br>
 API_SECRET</br>
 APP_ID</br>
-TRANSCRIBE_COMPREHEND_CONNECTOR_SERVER</br>
+TRANSCRIBE_COMPREHEND_REFERENCE_CONNECTION</br>
 CALLEE_NUMBER</br>
 
 ```bash
