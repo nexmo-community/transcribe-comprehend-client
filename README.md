@@ -1,4 +1,4 @@
-# Amazon Transcribe & Comprehend sample client application
+# Amazon Transcribe & Comprehend sample Voice API application
 
 Use this sample application to connect to a Transcribe & Comprehend reference connection for real time transcription and sentiment analysis of voice calls.
 
