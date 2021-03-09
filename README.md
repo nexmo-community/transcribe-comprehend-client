@@ -19,7 +19,7 @@ Once this application will be running, you test as follows:</br>
 
 ## Set up the reference connection server - Public hostname and port
 
-First set up a Transcribe & Comprehend reference connection server from https://github.com/nexmo-se/transcribe-comprehend-multi-sub.
+First set up a Transcribe & Comprehend reference connection server from https://github.com/nexmo-community/transcribe-comprehend-multi-sub.
 
 Default local (not public!) reference connection server `port` is: 5000.
 
